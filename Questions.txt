@@ -1,0 +1,71 @@
+﻿Problem 1 – Write a program to input a fraction ( in the form of a/b) and store it in a variable and print the output as (b/a) stored in another variable. [Make sure it output the fraction and not the result of Fraction]
+
+
+Problem 2 –Write a function that takes input as fractions (as described in the above question) and stores them in an array of size 3*3 [You will call the function once to store all the 9 elements of an array instead of calling the function 9 times]...Now you will have to make two different functions that outputs :-
+ {i} Transpose of the matrix (array)
+{ii} Trace of the matrix
+
+Problem 3 – Write a program that takes input as 0’s and 1’s and stores it into 9 arrays of size 1*2 and thus each of these small arrays are a part of a big array (A) of size 3*3. Now each of these small arrays would look like [ 0,1] or [0,0] or [1,0] or [1,1]. (Thus A can have one or more same elemental arrays depends on what input is given).
+So you have to write three functions that
+{i} A function named OR that takes input of each of the elemental arrays (of size 1*2) and passes them through an or gate and outputs the result. This function also stores the ‘or’ result of each of the 9 elemental arrays in another array ‘O’ of size 3*3 and prints the array O upon calling.
+(e.g.[1,0]/[0,1]/[1,1] = 1 and [0,0] = 0)
+{ii} A function named AND that does the same thing as in {i} but for AND gate and creates and print 3*3 array named ‘D’
+{iii} A function that compares the values of the arrays O and D at their same indexes and returns the value of the sum of indices at which O and D have same values(not the sum of values but the sum of indexes)
+Example of array A = |[1,0] [1,1] [0,0]| (just an example)
+                     |[0,0] [0,1] [1,1]|
+                     |[1,0] [0,0] [0,1]|
+and for part {iii} of problem 3 the indexes of array can be taken as |1 2 3| for calculartion of sum of indexes.                                                                
+                                                                     |4 5 6|
+                                                                     |7 8 9|
+
+
+Bonus Question
+
+
+Recently Petya walked in the forest and found a magic stick.
+Since Petya really likes numbers, the first thing he learned was spells for changing numbers. So far, he knows only two spells that can be applied to a positive integer:
+1. If the chosen number ‘a’ is even, then the spell will turn it to 3a/2
+2. If the chosen number ‘a’ is greater than 1, the spell will turn it to a-1
+Note that if the number is even and greater than one, then Petya can choose which spell to apply.
+Petya now has only one number x. He wants to know if his favorite number y can be obtained from x using the spells he knows. The spells can be used any number of times in any order. If it is not required to use spells, Petya can leave x as it is.
+
+
+
+Input
+1. The first line contains a single integer T ( 1≤ T ≤10^4) -- the number of test cases. Each test case consists of two lines.
+2. The first line of each test case contains two integers x and y the current number and the number that Petya wants to get.
+        
+        ( The integers x and y are in the range {1 to 10^9} ).
+
+
+Output
+For the i-th test case print the answer on it — YES if Petya can get the number y from the number x using known spells, and NO otherwise.
+You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).
+
+
+
+
+
+
+Example 1 :
+
+
+Input 
+7
+2 3
+1 1
+3 6
+6 8
+1 2
+4 1
+31235 6578234
+
+
+Output
+YES
+YES
+NO
+YES
+NO
+YES
+YES
